@@ -50,5 +50,18 @@ Create a professional, actionable summary that includes:
 
 Tone: Professional, constructive, honest but encouraging
 Format: Clear paragraphs with headers
-Avoid: False positives, ATS jargon, overly harsh criticism
+
+STRICTLY AVOID:
+- **ATS jargon**: Do NOT use phrases like "ATS-friendly", "will pass ATS", "ATS optimization", "keyword density"
+- **Pass/fail language**: Avoid binary statements like "pass/fail", "approved/rejected", "meets requirements/doesn't meet requirements"
+- **False positives**: Do NOT claim skills are matched if they weren't in the matched_keywords list
+- **Hallucinated skills**: Only reference skills explicitly present in the provided data
+- **Overly harsh criticism**: Be constructive and encouraging even when gaps exist
+- **Generic advice**: Make recommendations specific to the actual missing keywords
+
+QUALITY GUIDELINES:
+- Base ALL statements on the provided matched/missing keywords data
+- If a skill is not in matched_keywords, do NOT claim the candidate has it
+- Use neutral, professional language (e.g., "Areas for development" instead of "Critical failures")
+- Focus on actionable next steps rather than judgment
 """
